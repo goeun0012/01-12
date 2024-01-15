@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript function</h1>
+    <p class="demo"></p>
+    <p class="demo1"></p>
+
+    <!-- 스크립트 -->
+    <script lang="java">
+
+        /* 1 */
+        function my1(m1, m2){
+            return m1 * m2;
+        }
+
+        var res = my1(5,3);
+        document.querySelector(".demo").innerText = res;
+
+        // var a = 10;
+        // a = 5; O
+        // var a = 11; O
+
+        // let a = 10;
+        // a = 5; O
+        // let a = 11; X
+
+        // const a = 10;
+        // a = 5; X
+        // const a = 11; X
+
+        /* 2 */
+        let x = myA(4,3);
+        document.querySelector(".demo1").innerHTML = x;
+        
+        function myA(a,b){
+            return a * b + 10;
+        }
+
+    </script>
+</body>
+</html>
