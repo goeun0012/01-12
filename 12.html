@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>기간 조회하기</h3>
+    <form action="#">
+        시작 날짜 : <input type="date" class="datepic" id="startdate"> <br><br>
+        종료 날짜 : <input type="date" class="datepic" id="enddate"> <br><br>
+        
+        <div>
+            <button value="1" name="f_date">일주일</button>
+            <button value="2" name="f_date">3개월</button>
+            <button value="3" name="f_date">6개월</button>
+            <button value="4" name="f_date">1년</button>
+        </div>
+    </form>
+
+    <script lang="java">
+
+        var today = new Date();
+        var newDay = new Date(today);
+
+        // 3일 더하기
+        // newDay.setDate(today.getDate() + 3);
+        // 한 달 전으로 변경
+        // newDay.setMonth(today.getMonth() - 2);
+        // console.log(newDay);
+
+        dateformatter = function(newDay, today){
+            let year = newDay.getFullYear();
+            let month = newDay.getMonth()+1;
+            let date = newDay.getDate();
+
+            if(today){
+                let todayDate = today.getDate();
+            }
+        }
+
+        document.getElementsByName("f_date");
+
+    </script>
+</body>
+</html>

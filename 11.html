@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="java">
+        var date = new Date();// 현재 날짜 및 시간
+        console.log(date);
+
+        var date1 = new Date(1990, 11, 25, 3, 50, 26);
+        console.log(date1);
+
+        var date2 = new Date("2023-12-08");
+        console.log(date2);
+
+        var date3 = new Date("2023-12-08 17:12:05");
+        console.log(date3);
+
+        // 1s = 1000ms
+        // 1ms = 60s * 1000ms = 60,000ms
+        // 1h = 60m * 60,000ms = 3,600,000ms
+        // 1d = 24h * 3,600,000ms = 86,400,000ms
+
+        var date4 = new Date(0);
+        console.log(date4);
+
+        var date5 = new Date(86400000);
+        console.log(date5);
+
+        var year = date.getFullYear();
+        console.log(year);
+
+        var month = date.getMonth();
+        console.log(month+1); // 월 0 1 2 3 4 5 6 7 8 9 10 11 (인덱스번호 적용됨)
+        
+        var day = date.getDay();
+        console.log(day); // 날짜데이터의 요일을 숫자로 표현 (일)0 1 2 3 4 5 6(토)
+        
+        var hbd = new Date("2000-12-08");
+        var day1 = hbd.getDay();
+
+        switch (day1){
+            case 0 :
+                console.log("일요일"); break;
+            case 1 :
+                console.log("월요일"); break;
+            case 2 :
+                console.log("화요일"); break;
+            case 3 :
+                console.log("수요일"); break;
+            case 4 :
+                console.log("목요일"); break;
+            case 5 :
+                console.log("금요일"); break;
+            case 6 :
+                console.log("토요일"); break;
+        }
+
+        var D_date = date.getDate();
+        console.log(D_date); // 날짜데이터
+
+        var hour = date.getHours();
+        console.log(hour); // 시
+
+        var minute = date.getMinutes();
+        console.log(minute); // 분
+
+        var second = date.getSeconds();
+        console.log(second); // 초
+    </script>
+</body>
+</html>
